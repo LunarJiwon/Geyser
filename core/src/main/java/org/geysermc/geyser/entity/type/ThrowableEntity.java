@@ -196,15 +196,15 @@ public class ThrowableEntity extends Entity implements Tickable {
     }
 
     /**
-     * Removes the entity if it is 64 blocks below the world.
-     *
+     * Removes the entity if it is 64 blocks below the world. -> 홀로그램 표현 시 삭제되어 수정
+     * 
      * @return true if the entity was removed
      */
-    public boolean removedInVoid() {
-        if (position.getY() < session.getDimensionType().minY() - 64) {
-            session.getEntityCache().removeEntity(this);
-            return true;
-        }
-        return false;
-    }
+    // public boolean removedInVoid() {
+    //     if (position.getY() < session.getDimensionType().minY() - 64) {
+    //         session.getEntityCache().removeEntity(this);
+    //         return true;
+    //     }
+    //     return false;
+    // }
 }
